@@ -1,3 +1,4 @@
+require 'date'
 # First, ask for a person’s age.
 # Whatever they type, store it.
 # Then, figure out the current year. You can (but don't have to) use the Date class to determine the year today.
@@ -20,4 +21,12 @@
 # Then the output should be:
 # "Nice! You were born in approximately 2013."
 
-p "How old are you?"
+
+
+age = gets.chomp.to_i
+
+current_year = Date.today.year
+
+age_today = current_year - age
+
+p "Nice! You were born in approximately #{age_today}"

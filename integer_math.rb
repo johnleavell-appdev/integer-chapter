@@ -4,3 +4,7 @@
 # 
 # 4
 
+days = 365
+week = 7 
+
+p days % week 
